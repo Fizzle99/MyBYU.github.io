@@ -100,3 +100,12 @@ footer {
 .article img {
     margin: 10px;
 }
+
+.contactinfo {
+  
+    background-color:#778899;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+}
