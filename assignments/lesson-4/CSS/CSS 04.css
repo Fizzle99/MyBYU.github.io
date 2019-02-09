@@ -10,6 +10,7 @@ body {
     line-height: 32px;
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
+    background-color: #b3a3a385
 }
 
 h1 {
@@ -29,10 +30,10 @@ h2 {
 header, main, footer {
     margin: 0rem auto;
     padding: .0rem;
-    max-width: 10000px;
+    max-width: auto;
 }
 
-header, footer, footer a {
+header, footer, footer a, body {
     text-align: center;
     background-color:#778899;
     color: whitesmoke;

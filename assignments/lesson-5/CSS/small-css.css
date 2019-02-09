@@ -28,8 +28,8 @@ h2 {
 
 header, main, footer {
     margin: 0rem auto;
-    padding: .0rem;
-    max-width: 10000px;
+    padding: .1rem;
+    max-width: 100%;
 }
 
 header, footer, footer a {
@@ -44,19 +44,25 @@ body {
     color: whitesmoke;
 }
 
+/* Images */
 header img {
     
     width: 50px;
     height: 50px;
     float: center;
+
 }
+
+
 
 footer {
     text-align: center;
     color: #000000
     font-size: 8;
-    background-color: #008000;
+    background-color: #778899;
 }
+
+/* Custom Classes */
 
 .list {
     list-style-type:none;
@@ -64,4 +70,33 @@ footer {
     color: #ffffff
     font-size: 8;
     background-color: #778899;
+}
+
+.weathersummary {
+    background-color: #000000;
+    width: 15rem;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    text-align: center;
+}
+
+.forecast {
+
+    margin: 50px;
+
+
+}
+
+.article {
+    text-align: center;
+    background-color:#778899;
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+
+.article img {
+    margin: 10px;
 }

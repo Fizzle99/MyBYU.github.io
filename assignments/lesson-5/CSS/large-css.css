@@ -1,0 +1,18 @@
+
+@media (max-width:800px) {
+   
+    .forecast {
+        display: none;
+    }
+
+}
+
+@media (max-width:800px) {
+    .article img {
+        float: center;
+        width: 350px;
+        height: 200px;
+        margin: 5px;
+        
+    }
+}
