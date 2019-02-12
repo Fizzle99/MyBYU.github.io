@@ -107,8 +107,9 @@ footer {
 .contactinfo {
   
     background-color:#778899;
-    margin-top: 10px;
-    width: 100%;
+
+    margin: auto;
+    width: 90%;
     height: auto;
 }
 }
