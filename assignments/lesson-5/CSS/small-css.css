@@ -60,6 +60,9 @@ footer {
     color: #000000
     font-size: 8;
     background-color: #778899;
+    margin: auto;
+    width: 90%;
+    
 }
 
 /* Custom Classes */
