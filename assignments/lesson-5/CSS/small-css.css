@@ -44,7 +44,7 @@ header, footer, footer a {
 
 body {
     text-align: center;
-    background-color: #babfc4;
+    background-color: #778899;
     color: whitesmoke;
 }
 
@@ -63,7 +63,7 @@ footer {
     text-align: center;
     color: #000000
     font-size: 8;
-    background-color: #778899;
+    background-color: #000000;
     margin: auto;
     width: 90%;
     
@@ -102,7 +102,7 @@ footer {
 
 .article {
     text-align: center;
-    background-color:#778899;
+    background-color: #000000;
     margin: auto;
     width: 90%;
     height: auto;
@@ -116,7 +116,7 @@ footer {
 
 .contactinfo {
   
-    background-color:#778899;
+    background-color: #000000;
     float: center;
     margin-top: 5%;
     margin-left: 5%;
