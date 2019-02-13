@@ -38,14 +38,14 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color:#778899;
-    color: whitesmoke;
+    color: blue;
+    background-color: yellow;
 }
 
 body {
     text-align: center;
-    background-color: #7788999d;
-    color: whitesmoke;
+    color: white;
+    background-color: grey;
 }
 
 /* Images */
@@ -60,12 +60,12 @@ header img {
 
 
 footer {
-    text-align: center;
-    color: #000000
-    font-size: 8;
-    background-color: #7788999d;
-    margin: auto;
-    width: 90%;
+text-align: center;
+font-size: 8;
+color: blue;
+background-color: yellow;
+margin: auto; 
+width: 90%;
     
 }
 
@@ -103,7 +103,8 @@ footer {
 
 .article {
     text-align: center;
-    background-color: #7788999d;
+    color: blue;
+    background-color: yellow;
     margin: auto;
     width: 90%;
     height: auto;
@@ -117,7 +118,8 @@ footer {
 
 .contactinfo {
   
-    background-color: #7788999d;
+    color: blue;
+    background-color: yellow;
     float: center;
     margin-top: 5%;
     margin-left: 5%;
