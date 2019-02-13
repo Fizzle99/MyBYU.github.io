@@ -80,7 +80,8 @@ footer {
 }
 
 .weathersummary {
-    background-color: #7788999d;
+    color: blue;
+    background-color: yellow;
     width: 15rem;
     height: auto;
     position: absolute;
