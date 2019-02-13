@@ -97,7 +97,7 @@ footer {
 }
 
 .forecast img {
-    width: 70%;
+    width: 50%;
 }
 
 .article {
@@ -111,7 +111,7 @@ footer {
 .article img {
     margin-top: 10px;
     float: center;
-    width: 60%
+    width: 50%
 }
 
 .contactinfo {
