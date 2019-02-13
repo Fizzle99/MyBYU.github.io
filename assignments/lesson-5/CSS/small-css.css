@@ -12,6 +12,10 @@ body {
     color: #000000;
 }
 
+body img {
+    width: 100%
+}
+
 h1 {
     font-family: 'B612 Mono', monospace;
     text-align: center;
@@ -92,6 +96,10 @@ footer {
 
 }
 
+.forecast img {
+    width: 70%;
+}
+
 .article {
     text-align: center;
     background-color:#778899;
@@ -101,15 +109,20 @@ footer {
 }
 
 .article img {
-    width: 100%;
+    margin-top: 10px;
+    float: center;
+    width: 60%
 }
 
 .contactinfo {
   
     background-color:#778899;
-
-    margin: auto;
+    float: center;
+    margin-top: 5%;
+    margin-left: 5%;
     width: 90%;
     height: auto;
 }
+.contactinfo img {
+    width: 40%;
 }
