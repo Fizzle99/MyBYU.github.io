@@ -13,7 +13,8 @@ body {
 }
 
 body img {
-   width: 100%
+   width: 100%;
+   height: 500px;
 }
 
 h1 {
@@ -84,6 +85,10 @@ article img {
 }
 
 /* Custom Classes */
+
+.hero-image {
+   height: 200px;
+}
 
 .list {
    list-style-type:none;
