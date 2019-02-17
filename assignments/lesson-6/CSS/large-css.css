@@ -1,0 +1,31 @@
+
+@media (max-width:800px) {
+   
+    .forecast {
+        display: none;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    .weathersummary {
+        background-color: #000000;
+        width: 15rem;
+        height: auto;
+        position: relative;
+        top: 30%;
+        left: 5%;
+        text-align: center;
+    }
+}
+
+@media (max-width:800px) {
+    .article img {
+        float: center;
+        width: 350px;
+        height: 200px;
+        margin: 5px;
+        
+    }
+}
