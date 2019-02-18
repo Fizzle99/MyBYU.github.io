@@ -1,3 +1,9 @@
+@media only screen and (min-width: 45em) {
+    .navigation li:first-child { display: none;	}
+      .navigation li { display: inline-block;}	
+      .navigation li a { color: rgb(255, 255, 255);}
+  }
+
 
 @media (max-width:800px) {
    
@@ -21,11 +27,19 @@
 }
 
 @media (max-width:800px) {
-    .article img {
+    article img {
         float: center;
-        width: 350px;
-        height: 200px;
+        width: 200px;
+        height: 100px;
         margin: 5px;
         
+    }
+}
+@media (max-width:800px) {
+    .contactinfo img {
+        float: center;
+        width: 200px;
+        height: 100px;
+        margin: 5px;
     }
 }

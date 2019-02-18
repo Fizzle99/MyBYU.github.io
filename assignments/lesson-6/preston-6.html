@@ -33,7 +33,21 @@
        <div class="motto">
         <h3>The Wizard's knowledge at your fingertips</h3>
        </div>
-       <h3><a href="">Menu</a></h3>
+       
+
+
+       <nav>
+                     <ul class="navigation">
+                            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                            <li><a href="#" title="Home">Home</a></li>
+                            <li><a href="#" title="About">Preston</a></li>
+                            <li><a href="#" title="Service">Soda Springs</a></li>
+                            <li><a href="#" title="History">Fish Haven</a></li>
+                            <li><a href="#" title="Contact">Storm Center</a></li>
+                            <li><a href="#" title="Gallery">Gallery</a></li>
+                     </ul>
+       </nav>
+              
      
 </Header>
  
@@ -76,8 +90,9 @@ However it is not the only mean to defend yourself from a storm, and many people
  
  
 <div class="contactinfo">
-       30 N 1st E Preston, ID 83263<br>
+       
        <img src="images/Map.PNG"> <br>
+       30 N 1st E Preston, ID 83263<br>
 999.999.9999
 theweathersite@tws.com      
  
@@ -86,11 +101,23 @@ theweathersite@tws.com
 </body>
  
 <footer>
- 
-   &copy; 2020 | Attributions | Bradley James Sallee, 2/8/2019 <br>
-   theweathersite@tws.com      
+<body onload="compileDate()"></body>
+
+<!---<button type="button" onclick="experiment()">Boom</button>
+
+
+
+-->
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script src="scripts/currentdate.js"></script>
+   
       
 </footer>
-      
+
+
+
 </html>
 
