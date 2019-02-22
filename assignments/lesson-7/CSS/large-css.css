@@ -19,7 +19,7 @@
         background-color: #000000;
         width: 15rem;
         height: auto;
-        position: relative;
+        position: absolute;
         top: 30%;
         left: 5%;
         text-align: center;
