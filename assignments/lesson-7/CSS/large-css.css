@@ -16,6 +16,7 @@
 @media (max-width:800px) {
 
     .weathersummary {
+        font-size: 14px;
         background-color: #000000;
         width: 15rem;
         height: auto;
