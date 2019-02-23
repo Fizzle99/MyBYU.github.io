@@ -8,7 +8,8 @@ nav {	margin: 0 auto;	max-width: 760px; background-color: #000;	text-align: cent
   .navigation a {	display: flex;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
   .navigation a:hover {	color: #000; background-color: #fff; font-weight: 700;	}
 
-	.responsive li { display: flex; }
+   .responsive li { display: flex; }
+   
 
 
 
