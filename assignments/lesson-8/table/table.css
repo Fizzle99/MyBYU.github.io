@@ -11,6 +11,11 @@ table#t01 tr:nth-child(6) :first-child{
     font-style: italic;
 }
 
+table#t01 tr:nth-child(5) :nth-child(3){
+    background-color: #286068b6;
+}
+
+
 table#t01 tr:nth-child(9) {
     background-color:#55b4c0;
 }
@@ -28,7 +33,7 @@ table, td {
     text-align: center;
     }
     
-    tfoot {
+    tfoot tr {
     background-color:  #55b4c0;
     }
     
