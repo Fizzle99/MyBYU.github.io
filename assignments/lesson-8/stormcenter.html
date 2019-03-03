@@ -19,8 +19,9 @@
  
    <link rel="stylesheet" href="CSS/large-css.css">
  
+   <link rel="stylesheet" href="css/validation.css">
 
-<script src="scripts/dyslexia-mode.js"></script>
+<script src="scripts/rating.js"></script>
   
  
 </head>
@@ -53,9 +54,86 @@
  
 <body>
 
-<form>
 
-</form>
+<h1> Storm Sighting Submission Form</h1>
+
+<article>
+
+       <form onsubmit=>
+       <h3 style="text-align: center;"> Contact Information</h3>
+              Enter your full name <input type="text" name="fullname" required> <br>
+              Enter your E-mail <input type="text" name="email" required placeholder="Email"> <br>
+              
+              Enter your Phone Number 
+              
+              <input type="tel" name="phone" required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" placeholder="xxx-xxx-xxxx"> <br>
+              
+              Enter your Zip Code <input type="number" name="zip" required pattern="[09]{5}" placeholder="xxxxx"> <br>
+
+              <h3 style="text-align: center;">Sighting Details</h3>
+              
+              Enter the Storm Date <input type="date" name="date" required> <br>
+
+              Enter the Storm type <input list="type" name="stormType" required> <br>
+
+              <datalist id="type">
+               <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+              </datalist>
+              
+              
+              How severe was the storm? <br>
+
+              
+              <p style="text-align: center;">
+                            
+                            <label for="scale">Severity</label> <br>
+                            <input type="range" id="severity" name="scale"
+                            min="0" max="10" oninput="adjustRating(this.value)"
+                             onchange="adjustRating(this.value)"> <br>
+                            <span id="ratingvalue">5</span><br>
+                            
+              </p>
+
+              Where was the storm? 
+              
+              <select>
+                            <option value="select" disable> Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda springs">Soda Springs</option>
+                            <option value="fish haven">Fish Haven</option>
+                            
+              </select> <br>
+
+              Are you in Danger?
+
+              <div>
+                            <input type="radio" id="contactChoice1"
+                                   name="contact" value="yes">
+                            <label for="contactChoice1">Yes</label>
+                            <input type="radio" id="contactChoice2"
+                                   name="contact" value="maybe">
+                            <label for="contactChoice2">Maybe</label>
+                            <input type="radio" id="contactChoice3"
+                                   name="contact" value="no">
+                            <label for="contactChoice3">No</label>
+              </div> <br>
+              
+              What else can you tell us? <br>
+              <input type="textarea" required name="extrainfo">
+
+
+
+              <div class="submission">
+                     <input type="submit" value="Submit">
+              </div>
+       </form>
+
+</article>
+
 
 
 
