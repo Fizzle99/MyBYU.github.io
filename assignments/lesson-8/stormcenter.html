@@ -22,6 +22,8 @@
    <link rel="stylesheet" href="css/validation.css">
 
 <script src="scripts/rating.js"></script>
+
+<script src="scripts/thanks.js"></script>
   
  
 </head>
@@ -59,9 +61,10 @@
 
 <article>
       
-       <form onsubmit="location.href = 'thanks.html';">
+       <form action="thanks.html">
+       
        <h3 style="text-align: center;"> Contact Information</h3>
-              Enter your full name <input type="text" name="fullname" required> <br>
+              Enter your full name <input type="text" name="fullname" required min="5"> <br>
               Enter your E-mail <input type="text" name="email" required placeholder="Email"> <br>
               
               Enter your Phone Number 
@@ -128,7 +131,7 @@
 
 
               <div class="submission">
-                     <input type="submit" value="Submit">
+                     <input type="submit">
               </div>
        </form>
 
