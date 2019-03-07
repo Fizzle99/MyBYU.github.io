@@ -64,7 +64,7 @@
        <form action="thanks.html">
        
        <h3 style="text-align: center;"> Contact Information</h3>
-              Enter your full name <input type="text" name="fullname" required min="5"> <br>
+              Enter your full name <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required> <br>
               Enter your E-mail <input type="text" name="email" required placeholder="Email"> <br>
               
               Enter your Phone Number 
@@ -126,7 +126,7 @@
               </div> <br>
               
               What else can you tell us? <br>
-              <input type="textarea" required name="extrainfo">
+              <input type="textarea" name="extrainfo">
 
 
 
