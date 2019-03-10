@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+   <link rel="stylesheet" href="CSS/small-css.css">
+ 
+   <meta charset="utf-8">
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+   <title>Storm Wizard Gallery</title>
+ 
+   <meta name="description" content="Homge page for the StormWizard project, with home and navigation elements to let people look around. ">
+ 
+   <link rel="stylesheet" href="CSS/normalize.css">
+ 
+   <link rel="stylesheet" href="CSS/gallery.css">
+
+   <link rel="stylesheet" href="CSS/medium-7.css">
+ 
+   <link rel="stylesheet" href="CSS/large-css.css">
+ 
+ 
+</head>
+
+<body>
+<Header>
+ 
+       <h1>
+        <img src="images/logo.png">  StormWizard.Org
+       </h1>
+       <div class="motto">
+        <h3>The Wizard's knowledge at your fingertips</h3>
+       </div>
+       
+
+
+       <nav>
+                     <ul class="navigation">
+                            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                            <li><a href="preston-7.html" title="Home">Home</a></li>
+                            <li><a href="#" title="About">Preston</a></li>
+                            <li><a href="#" title="Service">Soda Springs</a></li>
+                            <li><a href="#" title="History">Fish Haven</a></li>
+                            <li><a href="#" title="Contact">Storm Center</a></li>
+                            <li><a href="#" title="Gallery">Gallery</a></li>
+                     </ul>
+       </nav>
+
+</Header>
+ 
+<header>
+
+</header>
+
+<section>
+
+</section>
+
+<div class="grid">
+
+
+<script>
+
+
+var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var superHeroes = request.response;
+      populateHeader(superHeroes);
+      showHeroes(superHeroes);
+    }
+    function populateHeader(jsonObj) {
+      var myH1 = document.createElement('h1');
+      myH1.textContent = jsonObj['squadName'];
+      header.appendChild(myH1);
+      var myPara = document.createElement('p');
+      myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+      header.appendChild(myPara);
+    }
+   
+   
+   
+    function showHeroes(jsonObj) {
+      var heroes = jsonObj['members'];
+      for(var i = 0; i < heroes.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myList = document.createElement('ul');
+        myH2.textContent = heroes[i].name;
+        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+        myPara2.textContent = 'Age: ' + heroes[i].age;
+        myPara3.textContent = 'Superpowers:';
+        var superPowers = heroes[i].powers;
+        for(var j = 0; j < superPowers.length; j++) {
+          var listItem = document.createElement('li');
+          listItem.textContent = superPowers[j];
+          myList.appendChild(listItem);
+        }
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+        section.appendChild(myArticle);
+      }
+    }
+                            </script>
+                          
+
+</div>
+            
+<footer>
+
+<p id="demo2"></p>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+   
+      
+</footer>
+
+</body>
+
+
+
+</html>
