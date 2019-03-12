@@ -99,7 +99,7 @@ footer {
    height: 200px;
 }
 
-.grid article {
+article {
    height: auto;
    background-color: white;
 }
