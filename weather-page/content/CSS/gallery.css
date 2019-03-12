@@ -100,13 +100,14 @@ footer {
 }
 
 .box {
+
    border-radius: 3px;
    background-color: black;
 }
 
 
 .contactinfo {
-    background-color: #000000;
+   background-color: #000000;
    float: center;
    margin-top: 5%;
    margin-left: 5%;
