@@ -13,6 +13,10 @@
  
    <meta name="description" content="Homge page for the StormWizard project, with home and navigation elements to let people look around. ">
  
+   <!--CSS files here.-->
+
+   <link rel="stylesheet" href="CSS/gallery.css">
+   
    <link rel="stylesheet" href="CSS/normalize.css">
  
    <link rel="stylesheet" href="CSS/small.css">
@@ -20,8 +24,7 @@
    <link rel="stylesheet" href="CSS/large.css">
  
 
-<script src="scripts/dyslexia-mode.js"></script>
-  
+
  
 </head>
  
@@ -39,39 +42,72 @@
        <nav>
                      <ul class="navigation">
                             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                            <li><a href="#" title="Home">Home</a></li>
-                            <li><a href="#" title="About">Preston</a></li>
-                            <li><a href="#" title="Service">Soda Springs</a></li>
-                            <li><a href="#" title="History">Fish Haven</a></li>
-                            <li><a href="#" title="Contact">Storm Center</a></li>
+                            <li><a href="weather.html" title="Home">Home</a></li>
+                            <li><a href="preston.html" title="Preston">Preston</a></li>
+                            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+                            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
                             <li><a href="gallery.html" title="Gallery">Gallery</a></li>
                      </ul>
        </nav>
               
      
 </Header>
- 
+ <section>
+
+ </section>
 <body>
+
+              <script>
+                            var section = document.querySelector('section');
+                            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+                            var request = new XMLHttpRequest();
+                            
+                            
+                            request.open('GET', requestURL);
+                            request.responseType = 'json';
+                            request.send();
+                            
+                            
+                            request.onload = function() {
+                              var townValues = request.response;
+                              showTowns(townValues);
+                            }
+                            
+                            
+                            
+                            function showTowns(jsonObj) {
+                              var town = jsonObj['towns'];
+                              for(var i = 0; i < town.length; i++) {
+                                var myArticle = document.createElement('article');
+                                var myH3 = document.createElement('h3');
+                                var myPara1 = document.createElement('p');
+                                var myPara2 = document.createElement('p');
+                                var myPara3 = document.createElement('p');
+                                var myPara4 = document.createElement('p');
+                                myH3.textContent = town[i].name;
+                                myPara1.textContent = 'Motto: ' + town[i].motto;
+                                myPara2.textContent = 'Population: ' + town[i].yearFounded;
+                                myPara3.textContent = 'Average Rainfall:'+ town[i].averageRainfall;
+                               
+                                myArticle.classList.add('grid');
+                                myArticle.classList.add('box');
+                                myArticle.appendChild(myH3);
+                                myArticle.appendChild(myPara1);
+                                myArticle.appendChild(myPara2);
+                                myArticle.appendChild(myPara3);
+                                section.appendChild(myArticle);
+                              }
+                            }
+                            
+                            
+                            </script>
 
 <div class="forecast">
  
 <img src ="images/5 Day Forecast Capture.PNG" alt="The 5 Day Forecast!">
  
 </div>
- 
-<article>
-<img src="images/shelter.jpg" alt="A shelter!">
-<p>
-Safety in the Shelter?
- 
-<p>
-       Storm Shelters are cool, a fun thing to boast about, and provide a very solid sense of security in the case of natural disasters.
-</p>
-<p>
-However it is not the only mean to defend yourself from a storm, and many people neglect the long-term plans that a storm shelter should enable.
-</p>
- 
-</article>
  
  
  

@@ -63,6 +63,11 @@ header img {
 
 }
 
+img {
+   width: auto;
+   height: 300px;
+}
+
 
 
 
