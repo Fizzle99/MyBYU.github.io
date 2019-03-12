@@ -17,7 +17,7 @@ This is a page
 
       </section>
 
-    <script>
+  <script>
     var header = document.querySelector('header');
     var section = document.querySelector('section');
     var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
@@ -45,16 +45,16 @@ This is a page
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
-        myH3.textContent = towns[i].name;
+        myH3.textContent = town[i].name;
         myPara1.textContent = 'Motto: ' + town[i].motto;
         myPara2.textContent = 'Population: ' + town[i].yearFounded;
         myPara3.textContent = 'Average Rainfall:'+ town[i].averageRainfall;
-        
-        myArticle.appendChild(myH2);
+       
+        myArticle.classList.add('box');
+        myArticle.appendChild(myH3);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
         section.appendChild(myArticle);
       }
     }
