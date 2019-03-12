@@ -99,6 +99,11 @@ footer {
    height: 200px;
 }
 
+.grid article {
+   height: auto;
+   background-color: white;
+}
+
 .box {
    border-radius: 3px;
    background-color: black;
