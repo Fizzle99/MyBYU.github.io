@@ -50,11 +50,17 @@
 
 </Header>
  
-<header>
 
-<section>
+
+
+<section class="towns">
+<div class="grid">
+
+</div>
+
 
 </section>
+
 
 
 <script>
@@ -89,8 +95,7 @@
       myPara1.textContent = 'Motto: ' + town[i].motto;
       myPara2.textContent = 'Population: ' + town[i].yearFounded;
       myPara3.textContent = 'Average Rainfall:'+ town[i].averageRainfall;
-     
-      myArticle.classList.add('grid');
+
       myArticle.classList.add('box');
       myArticle.appendChild(myH3);
       myArticle.appendChild(myPara1);
