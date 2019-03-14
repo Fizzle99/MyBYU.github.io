@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+   <link rel="stylesheet" href="CSS/small-css.css">
+ 
+   <meta charset="utf-8">
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+   <title>Preston Weather Update</title>
+ 
+   <meta name="description" content="Homge page for the StormWizard project, with home and navigation elements to let people look around. ">
+ 
+   <link rel="stylesheet" href="CSS/normalize.css">
+ 
+   <link rel="stylesheet" href="CSS/small.css">
+ 
+   <link rel="stylesheet" href="CSS/large.css">
+ 
+   <link rel="stylesheet" href="CSS/validation.css">
+
+<script src="scripts/rating.js"></script>
+
+<script src="scripts/thanks.js"></script>
+  
+ 
+</head>
+ 
+<Header>
+ 
+       <h1>
+           <img src="images/logo.png" alt="Wizard hat logo!">  StormWizard.Org
+       </h1>
+       <div class="motto">
+        <h3>The Wizard's knowledge at your fingertips</h3>
+       </div>
+       
+
+
+       <nav>
+                     <ul class="navigation">
+                            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                            <li><a href="weather.html" title="Home">Home</a></li>
+                            <li><a href="preston.html" title="Preston">Preston</a></li>
+                            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+                            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                     </ul>
+       </nav>
+              
+              
+     
+</Header>
+ 
+<body>
+
+
+<h1> Storm Sighting Submission Form</h1>
+
+<article>
+      
+       <form action="thanks.html">
+       
+       <h3 style="text-align: center;"> Contact Information</h3>
+              Enter your full name <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required> <br>
+              Enter your E-mail <input type="text" name="email" required placeholder="Email"> <br>
+              
+              Enter your Phone Number 
+              
+              <input type="tel" name="phone" required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" placeholder="xxx-xxx-xxxx"> <br>
+              
+              Enter your Zip Code <input type="number" name="zip" required pattern="[09]{5}" placeholder="xxxxx"> <br>
+
+              <h3 style="text-align: center;">Sighting Details</h3>
+              
+              Enter the Storm Date <input type="date" name="date" required> <br>
+
+              Enter the Storm type <input list="type" name="stormType" required> <br>
+
+              <datalist id="type">
+               <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+              </datalist>
+              
+              
+              How severe was the storm? <br>
+
+              
+              <p style="text-align: center;">
+                            
+                            <label for="scale">Severity</label> <br>
+                            <input type="range" id="severity" name="scale"
+                            min="0" max="10" oninput="adjustRating(this.value)"
+                             onchange="adjustRating(this.value)"> <br>
+                            <span id="ratingvalue">5</span><br>
+                            
+              </p>
+
+              Where was the storm? 
+              
+              <select>
+                            <option value="select" disable> Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda springs">Soda Springs</option>
+                            <option value="fish haven">Fish Haven</option>
+                            
+              </select> <br>
+
+              Are you in Danger?
+
+              <div>
+                            <input type="radio" id="contactChoice1"
+                                   name="contact" value="yes">
+                            <label for="contactChoice1">Yes</label>
+                            <input type="radio" id="contactChoice2"
+                                   name="contact" value="maybe">
+                            <label for="contactChoice2">Maybe</label>
+                            <input type="radio" id="contactChoice3"
+                                   name="contact" value="no">
+                            <label for="contactChoice3">No</label>
+              </div> <br>
+              
+              What else can you tell us? <br>
+              <input type="textarea" name="extrainfo">
+
+
+
+              <div class="submission">
+                     <input type="submit">
+              </div>
+       </form>
+
+</article>
+
+
+
+
+ 
+ 
+</body>
+
+
+
+</html>
+
