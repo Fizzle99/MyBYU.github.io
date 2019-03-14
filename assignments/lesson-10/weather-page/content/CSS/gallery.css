@@ -82,8 +82,9 @@ footer {
 .box:hover {box-shadow: 0 0 50px #333;}
 
 .box {
-   width: 500px;
+   width: 450px;
    border-radius: 3px;
+   height: auto;
    background-color: black;
 }
 

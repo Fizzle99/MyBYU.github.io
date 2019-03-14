@@ -22,7 +22,7 @@ function showTowns(jsonObj) {
       for (var i= 0; i < towns.length; i++){
           var name = towns[i].name;
           if(name === "Preston") {
-              var townName = document.createElement('h1');
+              var townName = document.createElement('h3');
               var townMotto = document.createElement('h4');
               var yearFounded = document.createElement('p');
               var population = document.createElement('p');
@@ -39,7 +39,7 @@ function showTowns(jsonObj) {
           }
           
           else if (name === "Soda Springs"){
-            var townName = document.createElement('h1');
+            var townName = document.createElement('h3');
             var townMotto = document.createElement('h4');
             var yearFounded = document.createElement('p');
             var population = document.createElement('p');
@@ -60,7 +60,7 @@ function showTowns(jsonObj) {
           }
           
           else if (name === "Fish Haven"){
-            var townName = document.createElement('h1');
+            var townName = document.createElement('h3');
             var townMotto = document.createElement('h4');
             var yearFounded = document.createElement('p');
             var population = document.createElement('p');
