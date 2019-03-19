@@ -83,5 +83,4 @@ function showTowns(jsonObj) {
       }
   } 
 
-  /*Forecast JSON*/
 
