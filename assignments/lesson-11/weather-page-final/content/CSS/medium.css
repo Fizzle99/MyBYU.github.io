@@ -1,0 +1,12 @@
+@media (max-width:1300px) {
+    .grid {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    grid-auto-rows: 100px;
+    grid-gap: 50px;
+    height: auto;
+    margin: 10px;
+    }
+ 
+}

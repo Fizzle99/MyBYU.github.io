@@ -1,0 +1,15 @@
+
+.submission {
+  text-align: center;
+}
+form {
+    text-align: left;
+}
+
+input:invalid {
+    background-color: white;
+  }
+  
+  input:valid {
+    background-color: rgb(145, 224, 145);
+  }
