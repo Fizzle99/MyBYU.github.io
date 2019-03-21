@@ -59,12 +59,14 @@
 <div class="weathersummary">
  
 <p>
-Currently: Overcast <br>
-High: 50 Degrees Farenheit <br>
-Wind Chill: <br>
-Humidity: <br>
-Wind Speed: <br> 
+       Currently: Overcast <br>
+       High: <span id="currentTemp"></span> &deg; F  <br>
+       <span id="chillResult"> </span> <br>
+       Humidity: <span id="currentHumidity"></span><br>
+       Wind Speed: <span id="currentWindSpeed"></span> MPH  <br> 
+
 </p>
+
 </div>
 
 <img src ="images/newheroimage.jpg" alt="A sunny day in Preston!">
@@ -111,7 +113,8 @@ theweathersite@tws.com
 
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
-   
+<script src="scripts/weather-api.js"></script>
+<script src="scripts/windchill.js"></script>   
       
 </footer>
 
