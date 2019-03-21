@@ -8,5 +8,6 @@ let weatherData = JSON.parse(weatherRequest.responseText);
 console.log(weatherData);
 
 document.getElementById('currentTemp').innerHTML = weatherData.main.temp_max;
-document.getElementById()
+document.getElementById('currentHumidity').innerHTML = weatherData.main.humidity;
+document.getElementById('currentWindSpeed').innerHTML = weatherData.wind.speed;
 }
