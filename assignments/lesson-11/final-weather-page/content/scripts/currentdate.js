@@ -5,6 +5,6 @@
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     
     
-    document.getElementById("demo2").innerHTML = "&copy; 2020 | Attributions | Bradley James Sallee | " + days[d.getDay()] + ", " +  months[d.getMonth()] + " " + d.getDate() + " " + d.getFullYear();
+    document.getElementById("demo2").innerHTML = "&copy; 2020 | Attributions | Bradley James Sallee | " + days[d.getDay()] + ", " + + d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear();
     
  

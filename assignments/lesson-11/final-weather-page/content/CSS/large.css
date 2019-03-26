@@ -1,0 +1,67 @@
+    @media only screen and (min-width: 45em) {
+        .navigation li:first-child { display: none;}
+        .navigation li { display: inline-block; text-align: center;}
+        .navigation li a { color: rgb(255, 255, 255);}
+    }
+
+
+    @media (max-width:800px) {
+    
+        .forecast {
+            display: none;
+        }
+
+    }
+
+    @media (max-width:800px) {
+
+        .weathersummary {
+            font-size: 14px;
+            background-color: #000000;
+            width: 15rem;
+            height: auto;
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            text-align: center;
+        }
+    }
+
+    @media (max-width:800px) {
+        article img {
+            width: 200px;
+            height: 100px;
+            margin: 5px;
+            
+        }
+    }
+
+    @media (max-width:800px) {
+        .hero img {
+            height: 300px;
+        }
+    }
+
+    @media (max-width:800px) {
+        .contactinfo img {
+            width: 200px;
+            height: 100px;
+            margin: 5px;
+        }
+    }
+
+    @media (max-width:900px) {
+
+            .grid {
+                display: grid;
+                grid-template-columns: 400px;
+                grid-template-rows: 250px 250px 250px 250px 250px 250px;
+                grid-auto-rows: 100px;
+                grid-gap: 50px;
+                height: auto;
+                margin: 10px;
+                }
+            .grid img {
+                width: 400px;
+            }
+        }

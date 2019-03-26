@@ -1,4 +1,5 @@
-var header = document.querySelector('header');
+/*Town JSON*/
+
 var section = document.querySelector('section');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
@@ -81,3 +82,5 @@ function showTowns(jsonObj) {
           }
       }
   } 
+
+

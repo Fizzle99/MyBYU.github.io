@@ -2,6 +2,11 @@
 <html lang="en">
  
 <head>
+<!--
+       API Key: a34a7fd6f1beadb58fbab4a57c448a14
+
+       Preston City ID: 5604473
+-->
  
    <link rel="stylesheet" href="CSS/small-css.css">
  
@@ -35,67 +40,72 @@
        
 
        <nav>
-                     <ul class="navigation">
-                            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                            <li><a href="weather.html" title="Home">Home</a></li>
-                            <li><a href="preston.html" title="Preston">Preston</a></li>
-                            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
-                            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
-                            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
-                            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
-                     </ul>
+              <ul class="navigation">
+                     <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                     <li><a href="weather.html" title="Home">Home</a></li>
+                     <li><a href="preston.html" title="Preston">Preston</a></li>
+                     <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+                     <li><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
+                     <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                     <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+              </ul>
        </nav>
               
               
      
 </Header>
  
-<body>
+<body onload="dynamicDate()">
  
  
-<div class="weathersummary">
+<section class="weathersummary">
  
 <p>
-       Currently: Overcast <br>
-       High: <span id="currentTemp"></span> &deg; F  <br>
-       <span id="chillResult"> </span> <br>
-       Humidity: <span id="currentHumidity"></span><br>
-       Wind Speed: <span id="currentWindSpeed"></span> MPH  <br> 
+
+Currently: Overcast <br>
+High: <span id="currentTemp"></span> &deg; F  <br>
+<span id="chillResult"> </span> <br>
+Humidity: <span id="currentHumidity"></span><br>
+Wind Speed: <span id="currentWindSpeed"></span> MPH  <br> 
 
 </p>
 
-</div>
+</section>
 
 <img src ="images/newheroimage.jpg" alt="A sunny day in Preston!">
 
-<div class="forecast">
+<section class="forecast">
  
-<img src ="images/5 Day Forecast Capture.PNG" alt="The 5 Day Forecast!">
+
  
 </div>
  
 <article>
 <img src="images/shelter.jpg" alt="A shelter!">
+
 <p>
 Safety in the Shelter?
  
 <p>
-       Storm Shelters are cool, a fun thing to boast about, and provide a very solid sense of security in the case of natural disasters.
-</p>
-<p>
+Storm Shelters are cool, a fun thing to boast about, and provide a very solid sense of security in the case of natural disasters.
+
 However it is not the only mean to defend yourself from a storm, and many people neglect the long-term plans that a storm shelter should enable.
 </p>
  
 </article>
  
- 
+ <div class="gallery">
+
+ </div>
  
 <div class="contactinfo">
        
-       <img src="images/Map.PNG" alt="Map of the area"> <br>
-       30 N 1st E Preston, ID 83263<br>
+<img src="images/Map.PNG" alt="Map of the area"> <br>
+30 N 1st E Preston, ID 83263<br>
 999.999.9999
-theweathersite@tws.com      
+theweathersite@tws.com <br>
+
+Information sourced from OpenWeatherMap, find them <a href="http://openweathermap.org/">Here!</a>
  
 </div>
  
@@ -103,15 +113,14 @@ theweathersite@tws.com
  
 <footer>
 
-<body onload="dynamicDate()"></body>
-
 <p id="demo2"></p>
 
 
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/weather-api.js"></script>
-<script src="scripts/windchill.js"></script>   
+<script src="scripts/windchill.js"></script>
+   
       
 </footer>
 
