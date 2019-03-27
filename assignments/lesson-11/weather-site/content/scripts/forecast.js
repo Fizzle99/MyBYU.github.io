@@ -11,6 +11,11 @@ request.send();
 
 
 request.onload = function() {
-  var townValues = request.response;
-  showTowns(townValues);
+  var forecast = request.response;
+  showForecast(forecast);
+}
+
+function showForecast(jsonObj) {
+var forecast = jsonObj[]
+
 }
