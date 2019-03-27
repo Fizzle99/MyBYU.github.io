@@ -6,14 +6,6 @@
 
 
     @media (max-width:800px) {
-    
-        .forecast {
-            display: none;
-        }
-
-    }
-
-    @media (max-width:800px) {
 
         .weathersummary {
             font-size: 14px;
