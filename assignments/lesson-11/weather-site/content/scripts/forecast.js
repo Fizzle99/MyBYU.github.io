@@ -1,15 +1,17 @@
 /*Forecast JSON*/
 
 let weatherRequest = new XMLHttpRequest();
-let apiURLstring = "";
+let apiURLstring = "api.openweathermap.org/data/2.5/forecast?id={5604473}";
 weatherRequest.open('GET', apiURLstring, true); 
 weatherRequest.send();
 
 weatherRequest.onload = function() {
-let weatherData = JSON.parse(weatherRequest.responseText);
-console.log(weatherData);
-
-document.getElementById('currentTemp').innerHTML = weatherData.main.temp_max;
-document.getElementById('currentHumidity').innerHTML = weatherData.main.humidity;
-document.getElementById('currentWindSpeed').innerHTML = weatherData.wind.speed;
+var weatherRequestData = 
+    for (var i = 0; i < weatherRequestData.list.length; i++) {
+        var x = forecastData.list[i].dt_txt;
+        var y = x.includes('18:00:00');
+        if (y == true) {
+           
+        } continue;
+     }
 }
